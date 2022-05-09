@@ -1,0 +1,48 @@
+.fondo {
+    background-image: url('https://www.cpokemon.com/wp-content/uploads/2019/01/pikachu-zzz-1920x1200.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.frase {
+    font-size: 4rem;
+  color: #ffffff;
+  font-family: "MV Boli";
+  top: 30px;
+  text-shadow: 6px 8px 8px #ddbe0e;
+}
+
+.boton {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+/* text-shadow: 3px 2px 1px #000000; */
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+font-family: Arial;
+  color: #000000;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.boton:active {
+  transform: translateY(3%);
+}
+
+.contenedor1 {
+ display: flex;
+  justify-content: space-around;
+  background-color: rgb(252, 160, 23);
+  background-attachment: fixed;
+}
+

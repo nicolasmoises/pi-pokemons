@@ -40,6 +40,11 @@ module.exports = (sequelize) => {
     image: {
       type:DataTypes.STRING,
       defaultValue: 'https://okdiario.com/guiltybit/wp-content/uploads/2016/12/5-razones-para-no-ver-poke%CC%81mon-5-1200x675.jpg'
+    },
+    createInDb: {
+      type: DataTypes.BOOLEAN,
+      allowNull:false,
+      defaultValue:true
     }
 
 

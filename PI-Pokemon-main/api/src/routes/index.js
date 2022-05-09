@@ -17,10 +17,10 @@ router.get('/pokemons', async (req,res) => {
   let pokemons = await getAllInfo()
   // console.log('esto es infototal',pokemons)
   if(name) {
-    let pokemon =  pokemons.filter(e => e.name.toLowerCase().includes(name.toLocaleLowerCase()))
+    let pokemon =  pokemons.filter(e => e.name.toLowerCase() === name.toLocaleLowerCase())
     pokemon.length ? 
     res.send(pokemon) :
-    res.status(404).send('que kiere inventar manga de kokemon')
+    res.status(404).send('no existe el nombre solicitado')
   }
   else {
     res.status(200).send(pokemons)
@@ -67,9 +67,9 @@ router.get('/types', async (req,res) => {
   }
 })
 
-router.post('/pokemons', async (req,res) => {
+router.post('/pokemon', async (req,res) => {
   try {
-    let {name,image, types, id,attack,defense,speed,weight,health}  = req.body
+    let {name,image, types, id,attack,defense,speed,weight,health, createInDb}  = req.body
     let createPokemon = await Pokemon.create({
       name,
       image,
@@ -78,7 +78,8 @@ router.post('/pokemons', async (req,res) => {
       defense,
       speed,
       weight,
-      health
+      health,
+      createInDb
     })
     // console.log('esto es createType', createPokemon)
     let typesDb = await Type.findAll({
@@ -86,7 +87,7 @@ router.post('/pokemons', async (req,res) => {
     }) 
     // console.log('esto es typesDb', typesDb)
     createPokemon.addTypes(typesDb)
-    console.log(createPokemon)
+    // console.log(createPokemon)
     res.send('el pokemon fue creado con exito mi rey')
   } catch (error) {
     console.error(error)
@@ -94,7 +95,7 @@ router.post('/pokemons', async (req,res) => {
 
 })
 
-router.get('/pokemonCreate', async(req,res) => {
+router.get('/pokemon', async(req,res) => {
   try {
     let pokemon = await Pokemon.findAll()
     pokemon?

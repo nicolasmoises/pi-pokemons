@@ -1,0 +1,110 @@
+.contendor1 {
+    background-image: url('https://images.unsplash.com/photo-1643725173053-ed68676f1878?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.botonCreated {
+    display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.botonCreated span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .botonCreated span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .botonCreated:hover span {
+    padding-right: 25px;
+  }
+
+  .botonCreated:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .titulo {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: "MV Boli";
+    top: 30px;
+    text-shadow: 6px 8px 8px #ddbe0e
+  }
+
+  .botonCargar {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+
+  .botonCargar:hover {
+    background-color: #555555;
+    color: white;
+
+  }
+
+  .selector {
+    /* height: 30px; */
+    margin-top: 30px;
+    border: 0;
+    font-family: "Staatliches", sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+     text-align: center;
+    font-size: 15px;
+    background-color: #e7edf088;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px #00000080;
+    cursor: pointer;
+}
+
+.cardsContenedor {
+    display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.loading {
+    color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
+.error {
+    color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+  

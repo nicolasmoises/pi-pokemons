@@ -1,0 +1,113 @@
+.fondoC {
+    background-image: url("https://images.unsplash.com/photo-1609372332255-611485350f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: auto;
+
+}
+
+.contenedorC{
+    background-color: rgba(245, 200, 0, 0.733);
+  height: 920px;
+  width: 800px;
+  border-radius: 18px;
+  margin-top: 10px;
+  margin-left: 450px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.botonV {
+    position: relative;
+  background-color: #fa9006;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.botonV:after {
+    content: "";
+    background: #fb8906;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.buttonV:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.h1C {
+    font-family: "Staatliches", sans-serif;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.itemN {
+    margin-bottom: 2%;
+}
+
+.labelN {
+    font-family: "Staatliches", sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 1.3em;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.inputN {
+    height: 25px;
+  width: 400px;
+  border-radius: 10px;
+  border-color: #000000;
+  background-color: rgba(255, 255, 255, 0.945);
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  content: center;
+ 
+}
+
+.divGp {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.botonN {
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f0a400;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.botonN:hover {
+    background-color: #f0a400;
+  color: #fff;
+}

@@ -1,0 +1,33 @@
+.input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Red Hat Display", sans-serif;
+  }
+
+  .boton1 {
+    height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 2px;
+  color: #f08000;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 200ms;
+  cursor: pointer;
+  outline: none;
+  font-family: "Red Hat Display", sans-serif;
+  }
+
+ .boton1:hover {
+     background-color: #f08000;
+     color: #fff;
+ }
+
+ .boton1:active {
+     transform: translateY(3%);
+ }

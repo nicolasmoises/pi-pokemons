@@ -1,0 +1,23 @@
+.ul {
+    padding-left: 0px
+}
+
+.paginado {
+    margin-bottom: 2%;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 1em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.botonPaginado {
+    background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.botonPaginado:hover {
+    background-color: #555555;
+  color: white;
+}

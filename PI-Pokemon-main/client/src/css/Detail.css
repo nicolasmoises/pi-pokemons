@@ -1,0 +1,79 @@
+.fondoD {
+    background-image: url("https://images.unsplash.com/photo-1605979257913-1704eb7b6246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+.cardDetail {
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.733);
+    margin-left: 600px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    padding-top: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.tituloD {
+    font-family: "Staatliches", sans-serif;
+    font-weight: bold;
+    font-size: 3.3rem;
+    color: #ff9e01;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+
+
+}
+
+.tiposD {
+    font-family: "Red Hat Display", Black 900;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    margin-top: 2%;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    text-align: center;
+    text-transform: capitalize;
+}
+.pDetail {
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.botonD {
+    -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+/* text-shadow: 3px 2px 1px #000000; */
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+font-family: Arial;
+  color: #000000;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+}
+
+.botonD:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .botonD:active {
+    transform: translateY(3%);
+  }
